@@ -15,16 +15,20 @@ import logging
 log = logging.getLogger(__name__)
 sys.tracebacklimit = 0
 
-user = 'root'
-passwd = ''
-db_name = 'agea_storage_db'
-tbl_name = 'agea_storage_tb'
-AWS_ACCESS_KEY_ID = 'AKIAJD444QDINRDNAJSQ'
-AWS_ACCESS_KEY_SECRET = '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'
-host = 's3.ap-south-1.amazonaws.com'
-bucket_name = 'ayp-iitb'
+# CONFIG
+
+user = 'mysql root user'
+passwd = 'password for root user'
+db_name = 'database name as initialized in setup.py'
+tbl_name = 'table name as initialized in setup.py'
+AWS_ACCESS_KEY_ID = 'enter your access ID here'
+AWS_ACCESS_KEY_SECRET = 'ener your Secret Key here'
+host = 'enter your host here'
+bucket_name = 'enter your bucket name here (should already be created)'
 STORAGE_ROOT = '/edx/var/edxapp/media/'
 FILE_STORE_TYPE = 'Unix'
+
+
 curr_path = os.path.dirname(os.path.abspath(inspect.getfile(
              inspect.currentframe())))
 os.chdir(curr_path)
