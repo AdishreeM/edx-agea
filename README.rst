@@ -17,7 +17,7 @@ Dependency
 This module depends on the package ``openpyxl`` to be installed in the environment.
 If this is already available, skip to the next section (Production Installation).
 
-1. Ckecking if openpyxl is installed
+1. Checking if openpyxl is installed
 
    .. code:: sh
 
